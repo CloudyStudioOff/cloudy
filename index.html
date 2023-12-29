@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudy Studio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Feiffel_tower_paris_france_4k_hd_travel-HD.jpg&f=1&nofb=1&ipt=fd36289dff8bbc1d9849b1a2a05f1cc54a1233faeecca2c123f7de5809687c97&ipo=images') center center/cover no-repeat;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #FF0000, #000000);
+            color: #fff;
+            text-align: right;
+            padding: 1em;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        #company-title {
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        h1 {
+            color: #FF0000;
+            margin-bottom: 20px;
+            animation: moveTitle 2s ease-in-out infinite alternate;
+            image-rendering: pixelated;
+        }
+
+        @keyframes moveTitle {
+            from {
+                transform: translateX(-5px);
+            }
+            to {
+                transform: translateX(5px);
+            }
+        }
+
+        p {
+            margin-bottom: 20px;
+            image-rendering: pixelated;
+        }
+
+        footer {
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #contact-btn {
+            background: linear-gradient(to right, #FF0000, #000000);
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        #contact-btn:hover {
+            background: linear-gradient(to right, #000000, #FF0000);
+        }
+
+        /* Nouvel onglet "Services" avec du texte et style de titre */
+        #services-tab {
+            font-size: 24px;
+            color: #FF0000;
+            margin-bottom: 20px;
+        }
+
+        #services-content {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="company-title">Votre Entreprise</div>
+    </header>
+
+    <section>
+        <h1>Bienvenue sur notre site !</h1>
+        <p>Nous sommes une petite startup géré par une personne. Si vous souhaitez acheter nos services, appuiyez sur le bouton si dessous.</p>
+        <!-- Bouton de contact sans animation -->
+        <a id="contact-btn" href="mailto:cloudy.studio@outlook.fr">Nous Contacter</a>
+    </section>
+
+    <!-- Nouvel onglet "Services" avec du texte et style de titre -->
+    <section id="services-content">
+        <div id="services-tab">Nos Services</div>
+        <h1> Production de sites WEB : </h1>
+        <p>Nous essaierons de faire de mon mieux pour faire un bon site, qualitatif, et beau.</p>
+        <p></p>
+        <h1>Nom de domaines :</h1>
+        <p>Nous faisons des domaines gratuits, comme des domaines payants. Tout dépents de l'url demandé et de la fin du domaine.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cloudy Studio. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
